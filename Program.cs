@@ -16,7 +16,7 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Get connection string from configuration (for local dev)
+// Get connection string from configuration (for local dev)TargetFramework
 // In production, this will come from App Service configuration
 string connectionString = builder.Configuration.GetConnectionString("DefaultConnection") 
     ?? "Server=tcp:[your-server].database.windows.net,1433;Database=NamesDB;User ID=[username];Password=[password];Encrypt=true";
